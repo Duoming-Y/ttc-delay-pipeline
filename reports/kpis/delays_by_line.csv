@@ -1,0 +1,6 @@
+line_name,incidents,delayed_incidents,delay_minutes,avg_minutes_when_delayed
+Line 1 Yonge-University,48835,18929,143823,7.6
+Line 2 Bloor-Danforth,40225,12953,105138,8.1
+Line 4 Sheppard,3383,1198,10480,8.7
+Line 3 Scarborough RT,738,339,4839,14.3
+Multiple lines,1331,0,0,
