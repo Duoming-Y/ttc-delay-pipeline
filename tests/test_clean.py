@@ -55,6 +55,8 @@ def test_classify_station_matches_known_stations(raw, station):
     ("WILSON CARHOUSE", "YARD"),
     ("LINE 1 YONGE-UNIVERSIT", "LINE_WIDE"),
     ("YONGE-UNIVERSITY AND B", "LINE_WIDE"),
+    ("YONGE - UNIVERSITY LIN", "LINE_WIDE"),   # must not become Bloor-Yonge via the "YONGE" alias
+    ("BLOOR - DANFORTH SUBWA", "LINE_WIDE"),
     ("BLOOR DANFORTH SUBWAY", "LINE_WIDE"),
     ("120 CARTWRIGHT AVE", "UNKNOWN"),
     (None, "UNKNOWN"),

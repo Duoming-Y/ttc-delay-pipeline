@@ -16,11 +16,12 @@ SQL_DIR = ROOT / "sql"
 CKAN_BASE_URL = "https://ckan0.cf.opendata.inter.prod-toronto.ca"
 PACKAGE_ID = "ttc-subway-delay-data"
 
-# Resource names on the portal -> label used in this project.
+# Resource names on the portal -> label stored in the `source` column.
+# Labels are text on purpose, so CSV readers (pandas, Power BI) do not guess a numeric type.
 DELAY_RESOURCES = {
-    "ttc-subway-delay-data-2023": "2023",
-    "ttc-subway-delay-data-2024": "2024",
-    "TTC Subway Delay Data since 2025.csv": "2025+",
+    "ttc-subway-delay-data-2023": "2023 file",
+    "ttc-subway-delay-data-2024": "2024 file",
+    "TTC Subway Delay Data since 2025.csv": "2025+ file",
 }
 CODES_RESOURCE = "Code Descriptions.csv"
 

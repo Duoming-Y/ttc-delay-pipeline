@@ -90,7 +90,7 @@ The full run takes about 15 seconds after the first download.
 pytest -v
 ```
 
-75 tests cover line and station normalization, timestamp parsing, the text-encoding repair, every reject and warning rule (using a small hand-made sample that contains each kind of problem), the database constraints, and the KPI query results. The tests need no network access and run on GitHub Actions for every push.
+77 tests cover line and station normalization, timestamp parsing, the text-encoding repair, every reject and warning rule (using a small hand-made sample that contains each kind of problem), the database constraints, and the KPI query results. The tests need no network access and run on GitHub Actions for every push.
 
 ## Limitations
 

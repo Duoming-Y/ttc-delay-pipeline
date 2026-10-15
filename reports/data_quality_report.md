@@ -12,7 +12,7 @@ Generated 2026-10-15 by `python -m ttc_pipeline`.
 | Clean rows with at least one warning | 3,462 |
 | Date range | 2023-01-01 to 2026-08-31 |
 
-Rows by source file: 2023: 22,949, 2024: 26,467, 2025+: 45,475
+Rows by source file: 2023 file: 22,949, 2024 file: 26,467, 2025+ file: 45,475
 
 ## Rejected rows (removed, saved to `data/processed/rejected_rows.csv`)
 
@@ -39,8 +39,8 @@ The raw `Station` field is free text (1,600+ distinct spellings). Each value is 
 
 | Location type | Rows | Share |
 |---|---|---|
-| STATION | 90,527 | 95.78% |
-| LINE_WIDE | 2,098 | 2.22% |
+| STATION | 90,513 | 95.77% |
+| LINE_WIDE | 2,112 | 2.23% |
 | YARD | 1,011 | 1.07% |
 | UNKNOWN | 876 | 0.93% |
 

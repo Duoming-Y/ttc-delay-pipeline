@@ -132,13 +132,15 @@ def classify_station(value):
     if value is None or pd.isna(value):
         return None, "UNKNOWN"
     raw = str(value).upper()
+    # Check line-wide text first: "YONGE - UNIVERSITY LINE" would otherwise simplify to "YONGE",
+    # which is an alias of the Bloor-Yonge station.
+    if _LINE_WIDE_WORDS.search(raw):
+        return None, "LINE_WIDE"
     simple = _simplify(raw)
     if simple in _STATION_LOOKUP:
         return _STATION_LOOKUP[simple], "STATION"
     if _YARD_WORDS.search(raw):
         return None, "YARD"
-    if _LINE_WIDE_WORDS.search(raw):
-        return None, "LINE_WIDE"
     return None, "UNKNOWN"
 
 
