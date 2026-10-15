@@ -1,0 +1,9 @@
+[project]
+name = "ttc-delay-pipeline"
+version = "1.0.0"
+description = "Cleans, validates and analyzes TTC subway delay open data"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
